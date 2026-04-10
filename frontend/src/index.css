@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ipl-blue: #003F5C;
+  --ipl-gold: #F4A700;
+  --ipl-dark: #0A0E1A;
+}
+
+body {
+  background-color: #0A0E1A;
+  color: #F9FAFB;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #111827; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+
+/* Gold glow on hover for rank cards */
+.rank-card:hover {
+  box-shadow: 0 0 20px rgba(244, 167, 0, 0.15);
+}
+
+/* Gradient badge */
+.gradient-badge {
+  background: linear-gradient(135deg, #F4A700 0%, #FF8C00 100%);
+}
+
+/* Pulse animation for AI loading */
+@keyframes pulse-gold {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.animate-pulse-gold { animation: pulse-gold 1.5s ease-in-out infinite; }
+
+/* Score bar animation */
+.score-bar {
+  transition: width 0.8s ease-out;
+}
