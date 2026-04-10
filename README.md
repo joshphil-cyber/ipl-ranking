@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏆 IPL 2025 Player Ranker
+#  IPL 2025 Player Ranker
 
 **A full-stack web app that ranks IPL 2025 batsmen and bowlers using a custom ML pipeline, predicts season impact scores with a GradientBoosting model, and generates AI-powered scouting reports via the Claude API.**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📸 Preview
+##  Preview
 
 | Rankings Page | Player Detail |
 |---|---|
@@ -22,7 +22,7 @@
 
 ---
 
-## ✨ Features
+##  Features
 
 - **ML Composite Ranking** — `MinMaxScaler` normalises 5 domain-engineered features per player type, then applies research-backed weights to produce a 0–100 score that goes beyond raw runs or wickets
 - **Impact Score Prediction** — A `GradientBoostingRegressor` trained on 200 synthetic IPL-distribution samples predicts each player's season impact (5-fold CV R² ≈ 0.92)
@@ -33,7 +33,7 @@
 
 ---
 
-## 🧠 ML Architecture
+##  ML Architecture
 
 The backend runs a **two-stage pipeline** — ranking and prediction are separate models answering different questions.
 
@@ -89,7 +89,7 @@ Each player detail page can generate a Claude-powered scouting report. The syste
 
 ---
 
-## 🗂 Project Structure
+##  Project Structure
 
 ```
 ipl-2025-ranker/
@@ -123,7 +123,7 @@ ipl-2025-ranker/
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -139,7 +139,7 @@ ipl-2025-ranker/
 
 ---
 
-## 🚀 Running Locally
+##  Running Locally
 
 ### Prerequisites
 - Python 3.11+
@@ -191,7 +191,7 @@ Frontend is now running at **http://localhost:5173**
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -205,7 +205,7 @@ Frontend is now running at **http://localhost:5173**
 
 ---
 
-## 📊 Data
+##  Data
 
 IPL 2025 final season stats (Top 20 batsmen and Top 20 bowlers) sourced from ESPNCricinfo, SportsTak, and official BCCI records as of June 2025.
 
@@ -213,6 +213,6 @@ All-rounders are **intentionally excluded** — the IPL Impact Player rule means
 
 ---
 
-## 📄 License
+##  License
 
 MIT
